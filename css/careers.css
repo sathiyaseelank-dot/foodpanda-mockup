@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 }
 .container{
     background-color: aquamarine;
@@ -12,12 +12,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px  3rem;
+    padding: 10px  4.5rem;
     width: auto;
     position: sticky;
+    z-index: 1000;
     top: 0px;
     background-color: white;
-    box-shadow: 0 10px 11px -10px rgba(0, 0, 0, 18%);
+    box-shadow: 0 10px 11px -10px rgba(0, 0, 0, .47);
     
 }
 a{
@@ -27,7 +28,13 @@ a{
 
 .navbar ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-family: arial,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size:0.875rem;
+    font-weight:400;
+    line-height:1.15;
+    gap: 20px;
+    
 }
 .navbar ul select{
     width: 20px;
@@ -41,10 +48,12 @@ a{
 }
 .navbar ul li a{
     text-decoration: none;
+    font-weight: 500;
 }
-.search-jobs{
+.search-jobs a{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 
 }
 .search-jobs a {
@@ -52,8 +61,10 @@ a{
     font-weight: 500;
 }
 .search-jobs a #icon{
-    font-size: large;
+    font-size: x-large;
     font-weight: bolder;
+    padding-left: 5px;
+
 }
 .search-btn-body{
     background-color: #FFB2BB;
@@ -130,20 +141,253 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
-    border: 2px solid;
+    /* border: 2px solid; */
     width: 100%;
+    position:relative;
+    height: 36.6rem;
 }
 h2{
     font-size: 3rem;
     width: 100%;
 }
 .search-btn-body .img{
-    width: 40rem;
-    height: 36.6rem;
-    border: 2px solid;
-    background-position: center;
-    background-size:contain;
+    width: 44rem;
+  height: 55rem;
+  right: 5rem;
+  /* border: 2px solid; */
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/2Nn1Y5_G9EZl9Qjb1WHOsg/");
+  right: 30px;
+  top: -136px;
+}
 
-    background-repeat: no-repeat;
-    background-image: url("https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/2Nn1Y5_G9EZl9Qjb1WHOsg/");
+.search-header{
+    max-width: 70%;
+    padding: 5rem;
+    height: 490px;
+}
+
+.search-content{
+    margin-top: 60px;
+}
+.search-content h1{
+    font-size: 4rem;
+}
+
+.search-content .h1{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 2;
+    text-shadow: 
+    0.5px 0 0.5px currentColor, 
+    -0.5px 0 0.5px currentColor,
+    0 0.5px 0.5px currentColor,
+    0 -0.5px 0.5px currentColor;
+}
+.search-content h2{
+    font-size: 2rem;
+    font-weight: 500;
+    word-spacing: 1px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+.search-btn{
+    margin-bottom: 50px;
+    position:relative;
+    /* border: 2px solid ; */
+    display: flex;
+    align-items: center;
+    width: 1019px;
+}
+.search-btn .search{
+    padding: 11px;
+    width: 53%;
+    /* border-radius: 50px; */
+    /* outline: none; */
+    
+    /* z-index: -1; */
+  
+  border: 0 !important;
+  border-radius: 3rem !important;
+  /* padding: 1.5rem 2rem; */
+  line-height: 1.5;
+  box-shadow: 0 4px 10px -2px rgba(0,0,0,.33) !important;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+input:focus{
+    border: 0;
+    margin:0;
+    outline: none;
+}
+.search-btn svg {
+    position: absolute;
+    right: 47.6%;
+    /* border: 2px solid; */
+    padding: 9px;
+    border-radius: 50px;
+    background-color: #ff2b85;
+    
+}
+.destination{
+    width: 100%;height: auto;background: white;text-align: center; 
+    padding-bottom: 5.5rem;
+}
+.destination h1{
+    padding-top: 5.5rem;
+}
+.destination p{
+    text-align: left;
+    padding-left: 5rem;
+    width:80%;
+    padding-top: 2rem;
+}
+.welove{
+    display:flex;
+    position:relative;
+    /* height: 585px; */
+    background-color: white;
+}
+.content-wrapper{
+    background-color: #eff2f4;
+    padding-left: 5rem;
+    padding-top: 5.5rem;
+    padding-right: 3rem;
+    width: 60%;
+    height: 500px;
+    
+}
+.content-wrapper h2{
+    color: #ff2b85;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.content-wrapper .content{
+    padding-right: 16rem;
+
+}
+
+.content-img{
+    position: absolute;
+    right: 82px;
+    top: 30px;
+
+}
+
+.content-img img{
+    position: relative;
+    z-index: 1;
+    border-radius: 24px;
+}
+.content-img::after{
+    content: "";
+    background-color: #ffb2bb;
+    transform: scale(1);
+    top: -15px;
+    bottom: -9px;
+    right: -82px;
+    left: 144px;
+    position: absolute;
+    border-radius: 25px 0 0 25px;
+    
+}
+.findmore{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    height: 131px;
+    justify-content: flex-end;
+
+}
+.findmore img{
+    width: 5.4rem;
+    height: auto;
+    position: absolute;
+    left: 11px;
+    top: 27px;
+    z-index: 1;
+
+}
+.findmore a{
+    padding: 10px;
+    width: 200px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #ff2b85;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 0;
+
+}
+.spacer{
+    background-color: white;
+}
+.welove2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.content-img2{
+    position: absolute;
+    left: 82px;
+    top: 30px;
+
+}
+
+.content-img2 img{
+    position: relative;
+    z-index: 1;
+    border-radius: 24px;
+}
+.content-img2::after{
+    content: "";
+    background-color: #ffb2bb;
+    transform: scale(1);
+    top: -15px;
+    bottom: -9px;
+    left: -82px;
+    right: 144px;
+    position: absolute;
+    border-radius: 0 25px 25px 0;
+    
+}
+
+.content p{
+    /* font-size: 1.6rem; */
+  font-weight: 400;
+  color: #231f20;
+  /* font-family: "Avenir Next LT Pro","Arial"; */
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin-bottom: 2rem;
+}
+.content2{
+    padding-left: 16rem;
+    padding-right: 2rem !important
+}
+.findmore2{
+    margin-left: 16rem !important;
+    padding-right: 0 !important;
+
+}
+.ascending{
+    position: relative;
+    height: 490px;
+    width: 100%;
+}
+.outbox{
+    border: #ff2b85 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
 }
